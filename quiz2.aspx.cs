@@ -17,8 +17,11 @@ namespace registration
         protected void btnnext_Click(object sender, EventArgs e)
         {
             int s = 0, i = int.Parse(Session["index"].ToString());
+            int j = int.Parse(Session["unattempted_index"].ToString());
             string[] q = (string[])Session["question"];
             string[] ans = (string[])Session["answer"];
+            string[] unattempted_ques = (string[])Session["unattempted_question"];
+            string[] unattempted_ans = (string[])Session["unattempted_answer"];
 
             if (rdoq1.SelectedIndex != -1)
             {
@@ -31,6 +34,12 @@ namespace registration
                     ans[i] = "Abstraction";
                     i++;
                 }
+            }
+            else
+            {
+                unattempted_ques[j] = "Q1. Which OOP principle hides implementation details?";
+                unattempted_ans[j] = "Abstraction";
+                j++;
             }
 
             if (rdoq2.SelectedIndex != -1)
@@ -45,6 +54,12 @@ namespace registration
                     i++;
                 }
             }
+            else
+            {
+                unattempted_ques[j] = "Q2. Which OOP principle allows one class to acquire properties of another?";
+                unattempted_ans[j] = "Inheritance";
+                j++;
+            }
 
             if (rdoq3.SelectedIndex != -1)
             {
@@ -57,6 +72,12 @@ namespace registration
                     ans[i] = "new";
                     i++;
                 }
+            }
+            else
+            {
+                unattempted_ques[j] = "Q3. Which keyword is used to create an object in C#?";
+                unattempted_ans[j] = "new";
+                j++;
             }
 
             if (rdoq4.SelectedIndex != -1)
@@ -71,6 +92,12 @@ namespace registration
                     i++;
                 }
             }
+            else
+            {
+                unattempted_ques[j] = "Q4. CLR stands for? ";
+                unattempted_ans[j] = "Common Language Runtime";
+                j++;
+            }
 
             if (rdoq5.SelectedIndex != -1)
             {
@@ -84,11 +111,20 @@ namespace registration
                     i++;
                 }
             }
+            else
+            {
+                unattempted_ques[j] = "Q5. JIT stands for? ";
+                unattempted_ans[j] = "Just-In-Time";
+                j++;
+            }
 
             Session["score"] = int.Parse(Session["score"].ToString()) + s;
             Session["question"] = q;
             Session["answer"] = ans;
             Session["index"] = i;
+            Session["unattempted_index"] = j;
+            Session["unattempted_question"] = unattempted_ques;
+            Session["unattempted_answer"] = unattempted_ans;
 
             Response.Redirect("quiz3.aspx");
         }
