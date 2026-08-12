@@ -68,16 +68,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images.aspx" />
+    <Content Include="Images\asusVivo15.png" />
+    <Content Include="Images\Bosch8Kg.jpg" />
+    <Content Include="Images\IQOO_Neo6.png" />
     <Content Include="Images\mahi1.jpg" />
     <Content Include="Images\mahi2.jpg" />
     <Content Include="Images\rutu.jpg" />
     <Content Include="Images\mahi_rutu.jpg" />
     <Content Include="Images\csk2.jpg" />
+    <Content Include="Images\samsung_S20.png" />
+    <Content Include="Images\whirlpool270L.png" />
     <Content Include="listbox.aspx" />
     <Content Include="quiz1.aspx" />
     <Content Include="quiz2.aspx" />
     <Content Include="quiz3.aspx" />
     <Content Include="radiobutton.aspx" />
+    <Content Include="shopping.aspx" />
     <Content Include="student.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -125,6 +131,13 @@
     </Compile>
     <Compile Include="radiobutton.aspx.designer.cs">
       <DependentUpon>radiobutton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopping.aspx.cs">
+      <DependentUpon>shopping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopping.aspx.designer.cs">
+      <DependentUpon>shopping.aspx</DependentUpon>
     </Compile>
     <Compile Include="student.aspx.cs">
       <DependentUpon>student.aspx</DependentUpon>
