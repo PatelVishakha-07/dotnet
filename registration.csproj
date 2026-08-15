@@ -68,16 +68,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images.aspx" />
-    <Content Include="Images\asusVivo15.png" />
-    <Content Include="Images\Bosch8Kg.jpg" />
-    <Content Include="Images\IQOO_Neo6.png" />
-    <Content Include="Images\mahi1.jpg" />
-    <Content Include="Images\mahi2.jpg" />
-    <Content Include="Images\rutu.jpg" />
-    <Content Include="Images\mahi_rutu.jpg" />
-    <Content Include="Images\csk2.jpg" />
-    <Content Include="Images\samsung_S20.png" />
-    <Content Include="Images\whirlpool270L.png" />
+    <Content Include="images\asusVivo15.png" />
+    <Content Include="images\Bosch8Kg.jpg" />
+    <Content Include="images\IQOO_Neo6.png" />
+    <Content Include="images\mahi1.jpg" />
+    <Content Include="images\mahi2.jpg" />
+    <Content Include="images\rutu.jpg" />
+    <Content Include="images\mahi_rutu.jpg" />
+    <Content Include="images\csk2.jpg" />
+    <Content Include="images\samsung_S20.png" />
+    <Content Include="images\whirlpool270L.png" />
+    <Content Include="image_next.aspx" />
     <Content Include="listbox.aspx" />
     <Content Include="quiz1.aspx" />
     <Content Include="quiz2.aspx" />
@@ -95,6 +96,13 @@
     </Compile>
     <Compile Include="images.aspx.designer.cs">
       <DependentUpon>images.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="image_next.aspx.cs">
+      <DependentUpon>image_next.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="image_next.aspx.designer.cs">
+      <DependentUpon>image_next.aspx</DependentUpon>
     </Compile>
     <Compile Include="listbox.aspx.cs">
       <DependentUpon>listbox.aspx</DependentUpon>
