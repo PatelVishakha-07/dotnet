@@ -29,17 +29,17 @@ namespace registration
 
         protected void btnnext_Click(object sender, EventArgs e)
         {
-            //if(i < images.Length - 1)
-            //{
-            //    i++;
-            //    showImage();
-            //}
+            if (i < images.Length - 1)
+            {
+                i++;
+                showImage();
+            }
 
-            btnprev.Enabled = true;
-            i++;
-            showImage();
-            if (i >= images.Length - 1)
-                btnnext.Enabled = false;
+            //btnprev.Enabled = true;
+            //i++;
+            //showImage();
+            //if (i >= images.Length - 1)
+            //    btnnext.Enabled = false;
         }
 
         void showImage()
