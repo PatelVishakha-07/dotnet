@@ -30,6 +30,26 @@
             </asp:RangeValidator>
             <br /><br /><br />
 
+            Password: <asp:TextBox ID="txtpass" runat="server"></asp:TextBox> <br /><br />
+
+            Confirm Password: <asp:TextBox ID="txtconfirm" runat="server"></asp:TextBox>
+            <asp:CompareValidator ID="CompareValidator1" runat="server" 
+                ControlToCompare="txtpass" ControlToValidate="txtconfirm" 
+                ForeColor="Red" Display="Dynamic"
+                ErrorMessage="Password and Confirm Password are not same">
+            </asp:CompareValidator>
+            
+            <br /><br />
+
+            Contact no: <asp:TextBox ID="txtcontact" runat="server"></asp:TextBox>
+
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                ControlToValidate="txtcontact" ValidationExpression="\d{10}"
+                ForeColor="Red" Display="Dynamic"
+                ErrorMessage="Enter 10 digit contact no">
+            </asp:RegularExpressionValidator>
+            <br /><br />
+
             <asp:Button ID="btnsubmit" runat="server" Text="Submit" OnClick="btnsubmit_Click" />
 
         </div>
