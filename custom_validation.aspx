@@ -9,13 +9,14 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            Enter input: <asp:TextBox ID="txtinput" runat="server"></asp:TextBox>
+            Enter input: <asp:TextBox ID="txtinput" runat="server" ></asp:TextBox>
 
 
             <asp:CustomValidator
                 ID="CustomValidator1" runat="server"
                 ControlToValidate="txtinput" ForeColor="Red" Display="Dynamic"
-                ErrorMessage="Enter valid password" OnServerValidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
+                ErrorMessage="password should contain 1 uppercase, 1 lowercase, 1 digit, 1 special character and no space"
+                OnServerValidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
             <br /><br />
             
             <asp:Button ID="btnsubmit" runat="server" Text="Submit" />
