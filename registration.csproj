@@ -80,6 +80,7 @@
     <Content Include="images\samsung_S20.png" />
     <Content Include="images\whirlpool270L.png" />
     <Content Include="image_next.aspx" />
+    <Content Include="inheritance.aspx" />
     <Content Include="listbox.aspx" />
     <Content Include="quiz1.aspx" />
     <Content Include="quiz2.aspx" />
@@ -112,6 +113,13 @@
     </Compile>
     <Compile Include="image_next.aspx.designer.cs">
       <DependentUpon>image_next.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inheritance.aspx.cs">
+      <DependentUpon>inheritance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inheritance.aspx.designer.cs">
+      <DependentUpon>inheritance.aspx</DependentUpon>
     </Compile>
     <Compile Include="listbox.aspx.cs">
       <DependentUpon>listbox.aspx</DependentUpon>
