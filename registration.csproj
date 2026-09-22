@@ -88,6 +88,7 @@
     <Content Include="radiobutton.aspx" />
     <Content Include="shopping.aspx" />
     <Content Include="student.aspx" />
+    <Content Include="tuple.aspx" />
     <Content Include="validations.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -170,6 +171,13 @@
     </Compile>
     <Compile Include="student.aspx.designer.cs">
       <DependentUpon>student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tuple.aspx.cs">
+      <DependentUpon>tuple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tuple.aspx.designer.cs">
+      <DependentUpon>tuple.aspx</DependentUpon>
     </Compile>
     <Compile Include="validations.aspx.cs">
       <DependentUpon>validations.aspx</DependentUpon>
