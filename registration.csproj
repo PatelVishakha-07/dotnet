@@ -81,6 +81,7 @@
     <Content Include="images\whirlpool270L.png" />
     <Content Include="image_next.aspx" />
     <Content Include="inheritance.aspx" />
+    <Content Include="linq.aspx" />
     <Content Include="listbox.aspx" />
     <Content Include="quiz1.aspx" />
     <Content Include="quiz2.aspx" />
@@ -121,6 +122,13 @@
     </Compile>
     <Compile Include="inheritance.aspx.designer.cs">
       <DependentUpon>inheritance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="linq.aspx.cs">
+      <DependentUpon>linq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="linq.aspx.designer.cs">
+      <DependentUpon>linq.aspx</DependentUpon>
     </Compile>
     <Compile Include="listbox.aspx.cs">
       <DependentUpon>listbox.aspx</DependentUpon>
