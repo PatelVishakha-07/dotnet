@@ -9,7 +9,18 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Button ID="Button1" runat="server" Text="Click" OnClick="Button1_Click" /> <br /><br />
+
+            Emp Id: <asp:TextBox ID="txtempid" runat="server"></asp:TextBox> <br /><br />
+
+            Emp Name: <asp:TextBox ID="txtname" runat="server"></asp:TextBox> <br /><br />
+
+            Salary: <asp:TextBox ID="txtsal" runat="server"></asp:TextBox> <br /><br />
+
+            Dept Id: <asp:TextBox ID="txtdptid" runat="server"></asp:TextBox> <br /><br />
+
+            <asp:Button ID="Button1" runat="server" Text="Add" OnClick="Button1_Click" /> <br /><br />
+
+            <asp:Button ID="btndisplay" runat="server" Text="Display" OnClick="btndisplay_Click" /> <br /><br />
 
             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
         </div>
